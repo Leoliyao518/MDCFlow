@@ -258,7 +258,7 @@ class DynamicFSFilter(nn.Module):
         x = self.pwconv2(x)
         x = x.permute(0, 3, 1, 2)
 
-        return x + x_ori
+        return x
 
 
 if __name__ == '__main__':
